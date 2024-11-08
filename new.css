@@ -1,0 +1,99 @@
+/* Mengatur background gelap dan font umum */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Kontainer utama */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Judul besar di atas */
+h1 {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Animasi fadeIn untuk muncul perlahan */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Desain kartu untuk setiap posisi */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Efek hover pada kartu */
+.card:hover {
+    background-color: #333;
+    box-shadow: 0 4px 20px rgba(255, 204, 0, 0.6); /* Efek glow saat hover */
+}
+
+/* Judul posisi dengan glow tipis */
+.position-title {
+    font-size: 1.3em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #ffcc00, 0 0 15px #ffcc00;
+}
+
+/* Nama anggota dengan sedikit glow */
+.position-name {
+    font-size: 1em;
+    color: #ccc;
+    text-shadow: 0 0 5px #ccc;
+}
+
+/* Menata layout kolom dengan flexbox */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1 1 200px;
+    margin: 10px;
+    max-width: 250px;
+}
+
+/* Footer dengan informasi copyright */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #aaa;
+}
+
+/* Efek glow saat loading */
+.loading {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
